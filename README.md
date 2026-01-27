@@ -33,6 +33,7 @@ A modern, AI-powered Android application to help applicants track their Canadian
 ## 🔒 Security
 
 - **Your Data Stays With You**: This app runs locally on your device. It communicates directly with IRCC servers using your credentials.
+- **Official Source**: Data is fetched directly from the official tracking portal: `https://ircc-tracker-suivi.apps.cic.gc.ca/`.
 - **No Middleman Server**: We do not store, harvest, or transmit your personal data to any third-party analytics servers.
 - **Open Source**: The code is open for review to ensure transparency.
 
