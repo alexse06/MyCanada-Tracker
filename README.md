@@ -55,7 +55,17 @@ A modern, AI-powered Android application to help applicants track their Canadian
 4.  Build and Run on your device.
 5.  Enter your credentials and API Key in the settings.
 
-## 📄 License
+## 📲 Installation
+
+1.  **Download**: [Click here to download MyCanadaTracker-v1.0-debug.apk](release/MyCanadaTracker-v1.0-debug.apk?raw=true)
+2.  **Transfer**: If you downloaded this on your computer, send it to your phone.
+3.  **Install**:
+    - Open the file on your phone.
+    - If prompted, allow **"Install from Unknown Sources"**.
+    - Click **Install**.
+4.  **Enjoy**: Open "MyCanada Tracker" from your app drawer.
+
+## �📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
