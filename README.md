@@ -30,6 +30,7 @@ A free, privacy-focused Android app to track your Canadian Immigration status. B
 - **📶 Offline Mode**: Access your cached data even when you don't have internet access.
 - **🇫🇷 Bilingual**: Full support for English and French.
 - **🔔 Smart Notifications**: Get notified only when significant changes occur.
+- **⏱️ Auto-Check**: The app automatically checks for updates in the background (configurable: every 4, 12, or 24 hours).
 
 ## 📸 Screenshots
 
