@@ -29,7 +29,7 @@ A free, privacy-focused Android app to track your Canadian Immigration status. B
 - **🔮 "Crystal Ball" Forecast**: Estimates your completion date based on real-time processing data (sourced publicly).
 - **📶 Offline Mode**: Access your cached data even when you don't have internet access.
 - **🇫🇷 Bilingual**: Full support for English and French.
-- **🔔 Smart Notifications**: Get notified only when significant changes occur.
+- **🔔 Smart Notifications**: The app monitors your status for you. Stop refreshing the website 100 times a day—we'll ping you if something changes.
 - **⏱️ Auto-Check**: The app automatically checks for updates in the background (configurable: every 4, 12, or 24 hours).
 
 ## 📸 Screenshots
