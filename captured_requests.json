@@ -1,0 +1,396 @@
+[
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/login",
+    "headers": {
+      "accept-language": "fr-FR,fr;q=0.9",
+      "upgrade-insecure-requests": "1",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/runtime.7d32128df396d293.js",
+    "headers": {
+      "origin": "https://ircc-tracker-suivi.apps.cic.gc.ca",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/login",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "*/*"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/polyfills.2e4b9183ca5e875d.js",
+    "headers": {
+      "origin": "https://ircc-tracker-suivi.apps.cic.gc.ca",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/login",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "*/*"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/main.be914eda70c04980.js",
+    "headers": {
+      "origin": "https://ircc-tracker-suivi.apps.cic.gc.ca",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/login",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "*/*"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/styles.1a42502760caef3e.css",
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/login",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "text/css,*/*;q=0.1"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/assets/translations/en-US.json",
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/login",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/assets/translations/fr-FR.json",
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/login",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/favicon.png",
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/login",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/347.a1078b0442de1a09.js",
+    "headers": {
+      "origin": "https://ircc-tracker-suivi.apps.cic.gc.ca",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/login",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "*/*"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/818.3a73501931f557b0.js",
+    "headers": {
+      "origin": "https://ircc-tracker-suivi.apps.cic.gc.ca",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/login",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "*/*"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/373.f37eb72518667620.js",
+    "headers": {
+      "origin": "https://ircc-tracker-suivi.apps.cic.gc.ca",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/login",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "*/*"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/33.4b0f94522b6ecc16.js",
+    "headers": {
+      "origin": "https://ircc-tracker-suivi.apps.cic.gc.ca",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/login",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "*/*"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/817.6c00a7244bf2a658.js",
+    "headers": {
+      "origin": "https://ircc-tracker-suivi.apps.cic.gc.ca",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/login",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "*/*"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/945.57bded2e5202b309.js",
+    "headers": {
+      "origin": "https://ircc-tracker-suivi.apps.cic.gc.ca",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/login",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "*/*"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/assets/canada_logo_footer.svg",
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/login",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/assets/register.svg",
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/login",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/assets/arrow_right_short.svg",
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/login",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/assets/eye-hide-icon.svg",
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/login",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/assets/canada_logo_header_en.svg",
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/login",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://api.ircc-tracker-suivi.apps.cic.gc.ca/user",
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "Bearer eyJraWQiOiJjdTRYb0ZDazBvY0NURE1JTExyQkFrRzJjZmZMU2psVUJla2FtZXNibjNNPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJlZWE2OWFkMC00NGFhLTQwZDQtOTM2Zi01YTVhY2Q3N2QzNWIiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmNhLWNlbnRyYWwtMS5hbWF6b25hd3MuY29tXC9jYS1jZW50cmFsLTFfN09Da0NuY1dDIiwiY3VzdG9tOmluaXRpYWxpemVkIjoidHJ1ZSIsImNvZ25pdG86dXNlcm5hbWUiOiIxMTMzODI0MDc2IiwiZ2l2ZW5fbmFtZSI6ImFsZXhpcyBhbmRyZSBtYXVyaWNlIiwib3JpZ2luX2p0aSI6IjVlMDI5ZDgzLTg0OWQtNGM1ZC04OWQyLTBiMzMzZjMyNDRkMSIsImF1ZCI6IjNjZnV0djVmZmQxaTYyMmcxdG42dnRvbjVyIiwiZXZlbnRfaWQiOiI1ODM0ZWFiNS0zMzdjLTQzYjEtYjEyOS01NDdjNjg5ODAwYTMiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTc2OTUyMDg3NywiY3VzdG9tOmxhc3RfbG9naW4iOiIxNzY5NTE4NjkyMTY0IiwiZXhwIjoxNzY5NTI0NDc3LCJpYXQiOjE3Njk1MjA4NzcsImZhbWlseV9uYW1lIjoic2VtcGVyZSIsImp0aSI6ImM5ZDVkYzJjLWRhZTEtNGU5MS1iMDkwLTdiNzI2OTc1NjQyMiIsImVtYWlsIjoiYWxleGlzLnNlbXBlcmVAaWsubWUifQ.CoOHxZghTRfzK0YPlcUTgeoWg6uL7SDcDvJTGXPCijACzy23FrSwmf18pXgPIElwPKMZi9Wz4NcTDnRiU7yO-HDrAQUzDBefu2kqFBUGkH-d6FAwb3B_sQ-jx6vaZllUyWbSJOKw4GONcEGF8em01tjKQuCnGPtOSGMP5rSBR1QLJSHibeYirR-bFIYIY3qL4mwVIYhSxlJY8LHH35LmtI2zFpb9mCNUA9kHAB5J9TdPhrqMLmkEg8KEc87DLVOk97GkHD3sPG8wBzusWsNe0yVg0EPRv2P6E-cNy4olaQ3UA9nnMy3xy3LgT6nLCvk5cuvfVsy0RefjGvK2A1qwOA",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "accept": "application/json",
+      "content-type": "application/json",
+      "origin": "https://ircc-tracker-suivi.apps.cic.gc.ca"
+    },
+    "postData": "{\"method\":\"get-profile-summary\",\"startIndex\":0,\"limit\":5,\"lob\":\"\",\"lastActivityDecs\":false,\"searchFilter\":\"\",\"statusFilter\":\"\",\"isAgent\":false}"
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/assets/search.svg",
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/applications",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/assets/bell_icon.svg",
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/applications",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://api.ircc-tracker-suivi.apps.cic.gc.ca/user",
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "Bearer eyJraWQiOiJjdTRYb0ZDazBvY0NURE1JTExyQkFrRzJjZmZMU2psVUJla2FtZXNibjNNPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJlZWE2OWFkMC00NGFhLTQwZDQtOTM2Zi01YTVhY2Q3N2QzNWIiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmNhLWNlbnRyYWwtMS5hbWF6b25hd3MuY29tXC9jYS1jZW50cmFsLTFfN09Da0NuY1dDIiwiY3VzdG9tOmluaXRpYWxpemVkIjoidHJ1ZSIsImNvZ25pdG86dXNlcm5hbWUiOiIxMTMzODI0MDc2IiwiZ2l2ZW5fbmFtZSI6ImFsZXhpcyBhbmRyZSBtYXVyaWNlIiwib3JpZ2luX2p0aSI6IjVlMDI5ZDgzLTg0OWQtNGM1ZC04OWQyLTBiMzMzZjMyNDRkMSIsImF1ZCI6IjNjZnV0djVmZmQxaTYyMmcxdG42dnRvbjVyIiwiZXZlbnRfaWQiOiI1ODM0ZWFiNS0zMzdjLTQzYjEtYjEyOS01NDdjNjg5ODAwYTMiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTc2OTUyMDg3NywiY3VzdG9tOmxhc3RfbG9naW4iOiIxNzY5NTE4NjkyMTY0IiwiZXhwIjoxNzY5NTI0NDc3LCJpYXQiOjE3Njk1MjA4NzcsImZhbWlseV9uYW1lIjoic2VtcGVyZSIsImp0aSI6ImM5ZDVkYzJjLWRhZTEtNGU5MS1iMDkwLTdiNzI2OTc1NjQyMiIsImVtYWlsIjoiYWxleGlzLnNlbXBlcmVAaWsubWUifQ.CoOHxZghTRfzK0YPlcUTgeoWg6uL7SDcDvJTGXPCijACzy23FrSwmf18pXgPIElwPKMZi9Wz4NcTDnRiU7yO-HDrAQUzDBefu2kqFBUGkH-d6FAwb3B_sQ-jx6vaZllUyWbSJOKw4GONcEGF8em01tjKQuCnGPtOSGMP5rSBR1QLJSHibeYirR-bFIYIY3qL4mwVIYhSxlJY8LHH35LmtI2zFpb9mCNUA9kHAB5J9TdPhrqMLmkEg8KEc87DLVOk97GkHD3sPG8wBzusWsNe0yVg0EPRv2P6E-cNy4olaQ3UA9nnMy3xy3LgT6nLCvk5cuvfVsy0RefjGvK2A1qwOA",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "accept": "application/json",
+      "content-type": "application/json",
+      "origin": "https://ircc-tracker-suivi.apps.cic.gc.ca"
+    },
+    "postData": "{\"method\":\"get-application-details\",\"applicationNumber\":\"E003952774\",\"uci\":\"1133824076\",\"isAgent\":false}"
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/assets/iconApplication.svg",
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/overview",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/assets/iconContact.svg",
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/overview",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/assets/iconRecords.svg",
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/overview",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/assets/iconArrow_right_blue.svg",
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/overview",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/assets/iconBell_grey.svg",
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/overview",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0",
+      "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/assets/corr-history-map.json",
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/applications/details",
+      "accept-language": "fr-FR,fr;q=0.9",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  }
+]

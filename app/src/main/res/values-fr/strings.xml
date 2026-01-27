@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Suivi IRCC</string>
+    <string name="dashboard_title">Tableau de Bord</string>
+    <string name="view_details">Voir Détails</string>
+    <string name="timeline_title">Chronologie</string>
+    <string name="details_section">Détails de la Demande</string>
+    <string name="received_label">Reçu le :</string>
+    <string name="last_updated_label">Mis à jour :</string>
+    <string name="status_hub_title">Statut</string>
+    <string name="crystal_ball_title">🔮 Boule de Cristal</string>
+    <string name="est_decision_label">Date de Décision Estimée</string>
+    <string name="days_remaining_label">Jours Restants</string>
+    <string name="news_title">Actualités Immigration (IA)</string>
+    <string name="history_section">Historique de la Demande</string>
+    <string name="detailed_status_section">Statut Détaillé</string>
+    <string name="current_status_section">Statut Actuel</string>
+    <string name="pull_to_refresh">Tirer pour actualiser...</string>
+    <string name="unknown_status">INCONNU</string>
+    <string name="medical_exam">Examen Médical</string>
+    <string name="biometrics">Biométrie</string>
+    <string name="background_check">Antécédents</string>
+    <string name="eligibility">Éligibilité</string>
+    <string name="remaining">Restants</string>
+    <string name="updated_today">Mis à jour aujourd\'hui</string>
+    <string name="updated_x_days_ago">Mis à jour il y a %1$d jours</string>
+    <string name="ai_error_prefix">Erreur IA : </string>
+    <string name="ai_analyzing">IA : Analyse en cours...</string>
+    <string name="source_ircc_google">Source : IRCC via Google</string>
+    <string name="days_suffix">Jours</string>
+    <string name="offline_mode">Mode Hors-Ligne - Données en cache</string>
+</resources>

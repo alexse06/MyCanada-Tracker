@@ -1,0 +1,25 @@
+Navigate to login page...
+[GET] https://ircc-tracker-suivi.apps.cic.gc.ca/en/login
+[GET] https://ircc-tracker-suivi.apps.cic.gc.ca/runtime.7d32128df396d293.js
+[GET] https://ircc-tracker-suivi.apps.cic.gc.ca/polyfills.2e4b9183ca5e875d.js
+[GET] https://ircc-tracker-suivi.apps.cic.gc.ca/main.be914eda70c04980.js
+[GET] https://ircc-tracker-suivi.apps.cic.gc.ca/styles.1a42502760caef3e.css
+[GET] https://ircc-tracker-suivi.apps.cic.gc.ca/assets/translations/en-US.json
+[GET] https://ircc-tracker-suivi.apps.cic.gc.ca/assets/translations/fr-FR.json
+[GET] https://ircc-tracker-suivi.apps.cic.gc.ca/favicon.png
+[GET] https://ircc-tracker-suivi.apps.cic.gc.ca/347.a1078b0442de1a09.js
+[GET] https://ircc-tracker-suivi.apps.cic.gc.ca/818.3a73501931f557b0.js
+[GET] https://ircc-tracker-suivi.apps.cic.gc.ca/373.f37eb72518667620.js
+[GET] https://ircc-tracker-suivi.apps.cic.gc.ca/33.4b0f94522b6ecc16.js
+[GET] https://ircc-tracker-suivi.apps.cic.gc.ca/817.6c00a7244bf2a658.js
+[GET] https://ircc-tracker-suivi.apps.cic.gc.ca/945.57bded2e5202b309.js
+[GET] https://ircc-tracker-suivi.apps.cic.gc.ca/assets/canada_logo_footer.svg
+[GET] https://ircc-tracker-suivi.apps.cic.gc.ca/assets/register.svg
+[GET] https://ircc-tracker-suivi.apps.cic.gc.ca/assets/arrow_right_short.svg
+[GET] https://ircc-tracker-suivi.apps.cic.gc.ca/assets/eye-hide-icon.svg
+[GET] https://ircc-tracker-suivi.apps.cic.gc.ca/assets/canada_logo_header_en.svg
+Waiting for user interaction... PLEASE LOGIN MANUALLY.
+[POST] https://api.ircc-tracker-suivi.apps.cic.gc.ca/user
+[GET] https://ircc-tracker-suivi.apps.cic.gc.ca/assets/search.svg
+[GET] https://ircc-tracker-suivi.apps.cic.gc.ca/assets/bell_icon.svg
+Saving captured requests to captured_requests.json

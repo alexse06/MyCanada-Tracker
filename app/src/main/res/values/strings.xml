@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">IRCC Tracker</string>
+    <string name="dashboard_title">Application Dashboard</string>
+    <string name="view_details">View Details</string>
+    <string name="timeline_title">Application Timeline</string>
+    <string name="details_section">Application Details</string>
+    <string name="received_label">Received:</string>
+    <string name="last_updated_label">Last Updated:</string>
+    <string name="status_hub_title">Status Hub</string>
+    <string name="crystal_ball_title">🔮 Crystal Ball Forecast</string>
+    <string name="est_decision_label">Estimated Decision Date</string>
+    <string name="days_remaining_label">Days Remaining</string>
+    <string name="news_title">Immigration News (AI Sourced)</string>
+    <string name="history_section">Application History</string>
+    <string name="detailed_status_section">Detailed Status</string>
+    <string name="current_status_section">Current Status</string>
+    <string name="pull_to_refresh">Pull to refresh...</string>
+    <string name="unknown_status">UNKNOWN</string>
+    <string name="medical_exam">Medical Exam</string>
+    <string name="biometrics">Biometrics</string>
+    <string name="background_check">Background Check</string>
+    <string name="eligibility">Eligibility</string>
+    <string name="remaining">Remaining</string>
+    <string name="updated_today">Updated Today</string>
+    <string name="updated_x_days_ago">Updated %1$d days ago</string>
+    <string name="ai_error_prefix">AI Error: </string>
+    <string name="ai_analyzing">AI: Analyzing...</string>
+    <string name="source_ircc_google">Source: IRCC via Google</string>
+    <string name="days_suffix">Days</string>
+    <string name="offline_mode">Offline Mode - Showing Cached Data</string>
+</resources>

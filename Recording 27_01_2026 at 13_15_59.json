@@ -1,0 +1,166 @@
+{
+    "title": "Recording 27/01/2026 at 13:15:59",
+    "steps": [
+        {
+            "type": "setViewport",
+            "width": 942,
+            "height": 808,
+            "deviceScaleFactor": 1,
+            "isMobile": false,
+            "hasTouch": false,
+            "isLandscape": false
+        },
+        {
+            "type": "navigate",
+            "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/login",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/login",
+                    "title": "Sign in to your Application Status Tracker account"
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Enter your UCI, client ID or party ID "
+                ],
+                [
+                    "#uci"
+                ],
+                [
+                    "xpath///*[@id=\"uci\"]"
+                ],
+                [
+                    "pierce/#uci"
+                ]
+            ],
+            "offsetY": 19.671875,
+            "offsetX": 423
+        },
+        {
+            "type": "click",
+            "target": "chrome-extension://fdjamakpfbbddfjaooikfcpapjohcfmg/content/webui/index.html?type=autofill-dropdown&token=b019a747-8eaf-40aa-86c3-fcaddcfbf022",
+            "selectors": [
+                [
+                    "[data-testid='\\{5444218B-786D-4CF2-891D-A7534A9D382D\\}']"
+                ],
+                [
+                    "xpath///*[@data-testid=\"{5444218B-786D-4CF2-891D-A7534A9D382D}\"]"
+                ],
+                [
+                    "pierce/[data-testid='\\{5444218B-786D-4CF2-891D-A7534A9D382D\\}']"
+                ]
+            ],
+            "offsetY": 34,
+            "offsetX": 343
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Enter your UCI, client ID or party ID "
+                ],
+                [
+                    "#uci"
+                ],
+                [
+                    "xpath///*[@id=\"uci\"]"
+                ],
+                [
+                    "pierce/#uci"
+                ]
+            ],
+            "offsetY": 33.671875,
+            "offsetX": 148
+        },
+        {
+            "type": "keyDown",
+            "target": "main",
+            "key": "Tab"
+        },
+        {
+            "type": "keyUp",
+            "key": "Tab",
+            "target": "main"
+        },
+        {
+            "type": "keyDown",
+            "target": "main",
+            "key": "Tab"
+        },
+        {
+            "type": "keyUp",
+            "key": "Tab",
+            "target": "main"
+        },
+        {
+            "type": "keyDown",
+            "target": "main",
+            "key": "Enter"
+        },
+        {
+            "type": "keyUp",
+            "key": "Enter",
+            "target": "main"
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.login-section"
+                ],
+                [
+                    "xpath//html/body/app-root/app-loading/div/app-shell/main/app-login/div/div/div[2]"
+                ],
+                [
+                    "pierce/div.login-section"
+                ]
+            ],
+            "offsetY": 576.703125,
+            "offsetX": 58
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Sign in "
+                ],
+                [
+                    "#sign-in-btn"
+                ],
+                [
+                    "xpath///*[@id=\"sign-in-btn\"]"
+                ],
+                [
+                    "pierce/#sign-in-btn"
+                ]
+            ],
+            "offsetY": 33.875,
+            "offsetX": 49
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "tr:nth-of-type(2) a"
+                ],
+                [
+                    "xpath//html/body/app-root/app-loading/div/app-shell/main/app-applications/div/div[3]/app-table/div[2]/table/tr[2]/td[1]/div/div/a"
+                ],
+                [
+                    "pierce/tr:nth-of-type(2) a"
+                ]
+            ],
+            "offsetY": 10.765625,
+            "offsetX": 72
+        }
+    ]
+}
