@@ -2,21 +2,22 @@
 
 ![Kotlin](https://img.shields.io/badge/Kotlin-2.0-purple) ![Compose](https://img.shields.io/badge/Jetpack%20Compose-Enabled-blue) ![AI](https://img.shields.io/badge/AI-Powered-orange) ![License](https://img.shields.io/badge/License-MIT-green)
 
-A modern, AI-powered Android application to help applicants track their Canadian Immigration status (Express Entry, Citizenship, PR, etc.) with clarity and ease.
+A free, privacy-focused Android app to track your Canadian Immigration status. Built by a geek who was tired of refreshing the official website. 🤓🇨🇦
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/alexse06/MyCanada-Tracker/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" width="150" alt="App Icon"/>
 </p>
 
-## ⚠️ DISCLAIMER: USE AT YOUR OWN RISK
+## ⚠️ IMPORTANT DISCLAIMER
 
-**THIS APPLICATION IS NOT AFFILIATED, ASSOCIATED, AUTHORIZED, ENDORSED BY, OR IN ANY WAY OFFICIALLY CONNECTED WITH IMMIGRATION, REFUGEES AND CITIZENSHIP CANADA (IRCC), THE GOVERNMENT OF CANADA, OR ANY OF ITS SUBSIDIARIES OR AFFILIATES.**
+**This is a personal hobby project.**
 
-- This software is an **unofficial** tool built for educational and personal use purposes only.
-- It retrieves data that is accessible to you via your own credentials.
-- The developers assume **NO RESPONSIBILITY** for the accuracy, reliability, or completeness of the data displayed.
-- **USE AT YOUR OWN RISK.** The developers shall not be liable for any damages or issues arising from the use of this software, including but not limited to missed deadlines, misunderstandings of status, or account issues.
-- Always verify your official status on the [Official IRCC Website](https://www.canada.ca/en/immigration-refugees-citizenship.html).
+*   **Unofficial**: This app is **NOT** affiliated with IRCC. It's just a tool I built for myself using AI.
+*   **Use at your own risk**: It works great for me, but since I'm just figuring this out as I go, I can't guarantee it will work forever.
+*   **Privacy**: The app runs locally on your phone. I don't see or store any of your data.
+*   **Check Official Sources**: Always verify your status on the [Official IRCC Website](https://www.canada.ca/en/immigration-refugees-citizenship.html).
+
+> **Note**: I specifically tested this for my **Permanent Residence (PR)** application. It should work for others, but your mileage may vary.
 
 ---
 
@@ -73,7 +74,7 @@ A modern, AI-powered Android application to help applicants track their Canadian
     - Click **Install**.
 4.  **Enjoy**: Open "MyCanada Tracker" from your app drawer.
 
-## �📄 License
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 

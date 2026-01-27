@@ -23,3 +23,5 @@ captures
 video_cache
 google-services.json
 project_keys/
+!release/
+!release/*.apk
