@@ -30,6 +30,14 @@ A modern, AI-powered Android application to help applicants track their Canadian
 - **🇫🇷 Bilingual**: Full support for English and French.
 - **🔔 Smart Notifications**: Get notified only when significant changes occur.
 
+## 📸 Screenshots
+
+<p align="center">
+  <img src="docs/images/screenshot_dashboard.png" width="250" alt="Dashboard Status"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="docs/images/screenshot_timeline.png" width="250" alt="Application Timeline"/>
+</p>
+
 ## 🔒 Security
 
 - **Your Data Stays With You**: This app runs locally on your device. It communicates directly with IRCC servers using your credentials.
