@@ -32,8 +32,7 @@ class GeminiRepository(private val context: Context) {
     fun getApiKey(): String? {
         val stored = prefs.getString("api_key", null)
         if (stored.isNullOrEmpty()) {
-            // User provided specific key for testing
-            return "AIzaSyC6qfwp9waZCtVIGYGbD4LelBLFVO7X5Bo"
+            return null
         }
         return stored
     }
