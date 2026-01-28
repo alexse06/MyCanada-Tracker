@@ -69,7 +69,7 @@ A free, privacy-focused Android app to track your Canadian Immigration status. B
 
 ## 📲 Installation
 
-1.  **Download**: [Click here to download MyCanadaTracker-v1.0-debug.apk](release/MyCanadaTracker-v1.0-debug.apk?raw=true)
+1.  **Download**: [Click here to download MyCanadaTracker-v2-de-ai.apk](release/MyCanadaTracker-v2-de-ai.apk?raw=true)
 2.  **Transfer**: If you downloaded this on your computer, send it to your phone.
 3.  **Install**:
     - Open the file on your phone.
