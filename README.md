@@ -29,8 +29,8 @@ A free, privacy-focused Android app to track your Canadian Immigration status. B
 - **🔮 "Crystal Ball" Forecast**: Estimates your completion date based on official IRCC data (stored locally).
 - **📶 Offline First**: Works entirely without internet (once data is fetched). 100% Privacy.
 - **🇫🇷 Bilingual**: Full support for English and French.
-- **� IRCC News**: Live news feed directly from the official Government of Canada RSS source.
-- **�🔔 Smart Notifications**: The app monitors your status for you. Stop refreshing the website 100 times a day—we'll ping you if something changes.
+- **📰 IRCC News**: Live news feed directly from the official Government of Canada RSS source.
+- **🔔 Smart Notifications**: The app monitors your status for you. Stop refreshing the website 100 times a day—we'll ping you if something changes.
 - **⏱️ Auto-Check**: The app automatically checks for updates in the background.
 
 ## 📸 Screenshots
