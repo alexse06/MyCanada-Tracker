@@ -38,24 +38,15 @@ fun SettingsScreen(
                 .padding(16.dp)
                 .fillMaxSize()
         ) {
-            Text("AI Configuration", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
+            Text("App Configuration", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
             Spacer(modifier = Modifier.height(16.dp))
 
-            OutlinedTextField(
-                value = apiKey,
-                onValueChange = { apiKey = it },
-                label = { Text("Gemini API Key") },
-                modifier = Modifier.fillMaxWidth(),
-                singleLine = true
+            // AI REMOVED: No API Key configuration needed anymore.
+            Text(
+                "Mode: Privacy First (Offline)\nNo AI or external servers used except for official IRCC News feed.",
+                style = MaterialTheme.typography.bodyMedium
             )
             
-            Spacer(modifier = Modifier.height(8.dp))
-            Text(
-                text = "Required for AI Insights and Live Processing Times.",
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.secondary
-            )
-
             Spacer(modifier = Modifier.height(24.dp))
             Divider()
             Spacer(modifier = Modifier.height(24.dp))

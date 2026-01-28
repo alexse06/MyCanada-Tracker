@@ -24,13 +24,14 @@ A free, privacy-focused Android app to track your Canadian Immigration status. B
 ## ✨ Features
 
 - **📊 Visual Dashboard**: See your application status at a glance with beautiful progress bars and status cards.
-- **🤖 AI Insights**: Powered by Google Gemini, get plain-English explanations for complex immigration codes and updates.
+- **📚 Smart Dictionary**: Instant, offline explanation of immigration codes (e.g. "IMM 5756") using a built-in static database.
 - **📱 Home Screen Widget**: Keep track of your status without even opening the app.
-- **🔮 "Crystal Ball" Forecast**: Estimates your completion date based on real-time processing data (sourced publicly).
-- **📶 Offline Mode**: Access your cached data even when you don't have internet access.
+- **🔮 "Crystal Ball" Forecast**: Estimates your completion date based on official IRCC data (stored locally).
+- **📶 Offline First**: Works entirely without internet (once data is fetched). 100% Privacy.
 - **🇫🇷 Bilingual**: Full support for English and French.
-- **🔔 Smart Notifications**: The app monitors your status for you. Stop refreshing the website 100 times a day—we'll ping you if something changes.
-- **⏱️ Auto-Check**: The app automatically checks for updates in the background (configurable: every 4, 12, or 24 hours).
+- **� IRCC News**: Live news feed directly from the official Government of Canada RSS source.
+- **�🔔 Smart Notifications**: The app monitors your status for you. Stop refreshing the website 100 times a day—we'll ping you if something changes.
+- **⏱️ Auto-Check**: The app automatically checks for updates in the background.
 
 ## 📸 Screenshots
 
@@ -40,11 +41,13 @@ A free, privacy-focused Android app to track your Canadian Immigration status. B
   <img src="docs/images/screenshot_timeline.png" width="250" alt="Application Timeline"/>
 </p>
 
-## 🔒 Security
+## 🔒 Security & Privacy
 
-- **Your Data Stays With You**: This app runs locally on your device. It communicates directly with IRCC servers using your credentials.
-- **Official Source**: Data is fetched directly from the official tracking portal: `https://ircc-tracker-suivi.apps.cic.gc.ca/`.
-- **No Middleman Server**: We do not store, harvest, or transmit your personal data to any third-party analytics servers.
+- **Your Data Stays With You**: This app runs locally on your device. It communicates directly with IRCC servers.
+- **No AI / No Cloud**: We removed all Artificial Intelligence components. No data is sent to Google, Gemini, or any third-party AI.
+- **Official Sources**: 
+    - Status: `https://ircc-tracker-suivi.apps.cic.gc.ca/`
+    - News: `https://api.io.canada.ca/`
 - **Open Source**: The code is open for review to ensure transparency.
 
 ## 🛠️ Tech Stack
@@ -52,8 +55,8 @@ A free, privacy-focused Android app to track your Canadian Immigration status. B
 - **Language**: Kotlin
 - **UI**: Jetpack Compose (Material 3)
 - **Architecture**: MVVM + Clean Architecture
-- **Network**: Retrofit + OkHttp
-- **AI**: Google Gemini Pro (Generative AI)
+- **Network**: Retrofit + OkHttp + XmlPullParser
+- **Data**: Static Dictionary + Local Processing Times
 - **Local Storage**: SharedPreferences (Encrypted)
 - **Background Work**: WorkManager
 
@@ -61,9 +64,8 @@ A free, privacy-focused Android app to track your Canadian Immigration status. B
 
 1.  Clone the repository.
 2.  Open in Android Studio.
-3.  Get a [Google Gemini API Key](https://aistudio.google.com/) (Required for AI features).
-4.  Build and Run on your device.
-5.  Enter your credentials and API Key in the settings.
+3.  Build and Run on your device.
+4.  Enter your IRCC credentials (UCI + Application Number).
 
 ## 📲 Installation
 
