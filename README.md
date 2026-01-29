@@ -33,7 +33,6 @@ A free, privacy-focused Android app to track your Canadian Immigration status. B
 - **🔔 Smart Notifications**: The app monitors your status for you. Stop refreshing the website 100 times a day—we'll ping you if something changes.
 - **⏱️ Auto-Check**: The app automatically checks for updates in the background.
 
-## 📸 Screenshots
 
 ## 📸 Screenshots
 
@@ -43,7 +42,6 @@ A free, privacy-focused Android app to track your Canadian Immigration status. B
   <img src="docs/images/screenshot_timeline.png" width="250" alt="Application Timeline"/>
 </p>
 
-> **Note**: This screenshot shows **V2 (Privacy Edition)**. All estimates and insights are generated locally without AI.
 
 ## 🔒 Security & Privacy
 
