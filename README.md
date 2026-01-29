@@ -79,6 +79,7 @@ A free, privacy-focused Android app to track your Canadian Immigration status. B
     - Click **Install**.
 4.  **Enjoy**: Open "MyCanada Tracker" from your app drawer.
 
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
