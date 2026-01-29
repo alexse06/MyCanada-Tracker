@@ -35,11 +35,15 @@ A free, privacy-focused Android app to track your Canadian Immigration status. B
 
 ## 📸 Screenshots
 
+## 📸 Screenshots
+
 <p align="center">
-  <img src="docs/images/screenshot_dashboard.png" width="250" alt="Dashboard Status"/>
+  <img src="docs/images/screenshot_dashboard_v2.png" width="250" alt="Dashboard Status V2"/>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="docs/images/screenshot_timeline.png" width="250" alt="Application Timeline"/>
 </p>
+
+> **Note**: This screenshot shows **V2 (Privacy Edition)**. All estimates and insights are generated locally without AI.
 
 ## 🔒 Security & Privacy
 
