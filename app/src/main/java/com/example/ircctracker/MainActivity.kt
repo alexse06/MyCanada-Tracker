@@ -1,7 +1,7 @@
 package com.example.ircctracker
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
+
 import androidx.activity.compose.setContent
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -20,10 +20,15 @@ import androidx.work.PeriodicWorkRequestBuilder
 import androidx.work.WorkManager
 import androidx.work.ExistingPeriodicWorkPolicy
 import java.util.concurrent.TimeUnit
-import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.*
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.Modifier
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Lock
 
-class MainActivity : ComponentActivity() {
+import androidx.appcompat.app.AppCompatActivity
+
+class MainActivity : AppCompatActivity() {
     // Register permission launcher layout-independently
     private val requestPermissionLauncher = registerForActivityResult(
         androidx.activity.result.contract.ActivityResultContracts.RequestPermission()
@@ -35,8 +40,13 @@ class MainActivity : ComponentActivity() {
         }
     }
 
+    // Biometric Manager
+    private lateinit var biometricManager: com.example.ircctracker.util.BiometricPromptManager
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        
+        biometricManager = com.example.ircctracker.util.BiometricPromptManager(this)
         
         // Manual DI for simplicity in scaffold
         val retrofit = Retrofit.Builder()
@@ -46,8 +56,6 @@ class MainActivity : ComponentActivity() {
             .build()
             
         val apiService = retrofit.create(IrccApiService::class.java)
-        // Login logic would normally involve Cognito SRP.
-        // For this scaffold, we will simulate the repository using the discovered config.
         val repository = AuthRepository(apiService, applicationContext)
         val dashboardRepository = com.example.ircctracker.data.repository.DashboardRepository(apiService)
         
@@ -69,15 +77,35 @@ class MainActivity : ComponentActivity() {
                 val detailsRepository = com.example.ircctracker.data.repository.DetailsRepository(apiService)
                 val geminiRepository = remember { com.example.ircctracker.data.repository.GeminiRepository(applicationContext) }
                 
-                // Schedule Background Work
+                // Security Lock State
+                // Default to LOCKED if biometric is enabled in settings (default true if hardware available)
                 val context = androidx.compose.ui.platform.LocalContext.current
+                val prefs = remember { context.getSharedPreferences("security_prefs", android.content.Context.MODE_PRIVATE) }
+                val isBiometricEnabled = remember { 
+                    prefs.getBoolean("biometric_enabled", false) // Default OFF until user enables it
+                }
+                var isLocked by remember { mutableStateOf(isBiometricEnabled) }
+                
                 LaunchedEffect(Unit) {
-                    val prefs = context.getSharedPreferences("worker_prefs", android.content.Context.MODE_PRIVATE)
-                    val enabled = prefs.getBoolean("notifications_enabled", true)
-                    val intervalMinutes = prefs.getLong("update_interval_minutes", 12 * 60L) // Default 12 hours
+                    if (isBiometricEnabled && biometricManager.isBiometricAvailable()) {
+                        biometricManager.showBiometricPrompt(
+                            onSuccess = { isLocked = false },
+                            onFailed = { /* Keep locked */ },
+                            onError = { _, _ -> /* Keep locked */ }
+                        )
+                    } else {
+                        isLocked = false
+                    }
+                }
+                
+                // Schedule Background Work
+                LaunchedEffect(Unit) {
+                    // Use standard prefs for worker config (non-sensitive)
+                    val workerPrefs = context.getSharedPreferences("worker_prefs", android.content.Context.MODE_PRIVATE)
+                    val enabled = workerPrefs.getBoolean("notifications_enabled", true)
+                    val intervalMinutes = workerPrefs.getLong("update_interval_minutes", 12 * 60L) // Default 12 hours
                     
                     if (enabled) {
-                        val authRepo = AuthRepository(apiService, applicationContext)
                         val workRequest = PeriodicWorkRequestBuilder<com.example.ircctracker.worker.UpdateWorker>(
                             intervalMinutes, TimeUnit.MINUTES
                         ).build()
@@ -93,37 +121,69 @@ class MainActivity : ComponentActivity() {
                 }
                 
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    when (val state = authState) {
-                        is com.example.ircctracker.data.repository.AuthState.LoggedIn -> {
-                            if (selectedAppId == "SETTINGS") {
-                                com.example.ircctracker.ui.settings.SettingsScreen(
-                                    geminiRepository = geminiRepository,
-                                    onBack = { selectedAppId = null }
+                    if (isLocked) {
+                        // Locked Screen UI
+                        androidx.compose.foundation.layout.Box(
+                            modifier = Modifier.fillMaxSize(),
+                            contentAlignment = androidx.compose.ui.Alignment.Center
+                        ) {
+                            androidx.compose.foundation.layout.Column(horizontalAlignment = androidx.compose.ui.Alignment.CenterHorizontally) {
+                                androidx.compose.material3.Icon(
+                                    imageVector = androidx.compose.material.icons.Icons.Default.Lock,
+                                    contentDescription = "Locked",
+                                    modifier = Modifier.size(64.dp),
+                                    tint = MaterialTheme.colorScheme.primary
                                 )
-                            } else if (selectedAppId != null) {
-                                com.example.ircctracker.ui.details.DetailsScreen(
-                                    token = state.token,
-                                    appNum = selectedAppId!!,
-                                    uci = state.uci,
-                                    repository = detailsRepository,
-                                    geminiRepository = geminiRepository,
-                                    onBack = { selectedAppId = null },
-                                    onSettingsClick = { selectedAppId = "SETTINGS" }
+                                androidx.compose.foundation.layout.Spacer(modifier = Modifier.height(16.dp))
+                                androidx.compose.material3.Text(
+                                    "App Locked",
+                                    style = MaterialTheme.typography.headlineMedium
                                 )
-                            } else {
-                                com.example.ircctracker.ui.dashboard.DashboardScreen(
-                                    token = state.token,
-                                    repository = dashboardRepository,
-                                    onAppClick = { appId -> 
-                                        android.util.Log.i("MainActivity", "App Clicked: $appId")
-                                        selectedAppId = appId 
-                                    },
-                                    // Assuming DashboardScreen might need a settings button eventually, but for now it's accessible via Details
-                                )
+                                androidx.compose.foundation.layout.Spacer(modifier = Modifier.height(8.dp))
+                                androidx.compose.material3.Button(onClick = {
+                                    biometricManager.showBiometricPrompt(
+                                        onSuccess = { isLocked = false },
+                                        onFailed = {},
+                                        onError = { _, _ -> }
+                                    )
+                                }) {
+                                    androidx.compose.material3.Text("Unlock")
+                                }
                             }
                         }
-                        else -> {
-                            com.example.ircctracker.ui.login.LoginScreen(repository)
+                    } else {
+                        // Main App Content
+                        when (val state = authState) {
+                            is com.example.ircctracker.data.repository.AuthState.LoggedIn -> {
+                                if (selectedAppId == "SETTINGS") {
+                                    com.example.ircctracker.ui.settings.SettingsScreen(
+                                        geminiRepository = geminiRepository,
+                                        onBack = { selectedAppId = null }
+                                    )
+                                } else if (selectedAppId != null) {
+                                    com.example.ircctracker.ui.details.DetailsScreen(
+                                        token = state.token,
+                                        appNum = selectedAppId!!,
+                                        uci = state.uci,
+                                        repository = detailsRepository,
+                                        geminiRepository = geminiRepository,
+                                        onBack = { selectedAppId = null },
+                                        onSettingsClick = { selectedAppId = "SETTINGS" }
+                                    )
+                                } else {
+                                    com.example.ircctracker.ui.dashboard.DashboardScreen(
+                                        token = state.token,
+                                        repository = dashboardRepository,
+                                        onAppClick = { appId -> 
+                                            android.util.Log.i("MainActivity", "App Clicked: $appId")
+                                            selectedAppId = appId 
+                                        },
+                                    )
+                                }
+                            }
+                            else -> {
+                                com.example.ircctracker.ui.login.LoginScreen(repository)
+                            }
                         }
                     }
                 }

@@ -19,6 +19,8 @@ fun SettingsScreen(
 ) {
     var apiKey by remember { mutableStateOf(geminiRepository.getApiKey() ?: "") }
     var savedMessageVisible by remember { mutableStateOf(false) }
+    val context = androidx.compose.ui.platform.LocalContext.current
+
 
     Scaffold(
         topBar = {
@@ -48,6 +50,54 @@ fun SettingsScreen(
             )
             
             Spacer(modifier = Modifier.height(24.dp))
+            Spacer(modifier = Modifier.height(24.dp))
+            Divider()
+            Spacer(modifier = Modifier.height(24.dp))
+            
+            Text("Security", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
+            Spacer(modifier = Modifier.height(16.dp))
+            
+            // Biometric Toggle
+            var isBiometricEnabled by remember { mutableStateOf(false) } // Load from prefs
+            val securityPrefs = remember { context.getSharedPreferences("security_prefs", android.content.Context.MODE_PRIVATE) }
+            
+            LaunchedEffect(Unit) {
+                isBiometricEnabled = securityPrefs.getBoolean("biometric_enabled", false)
+            }
+            
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Column {
+                    Text("Biometric Lock", style = MaterialTheme.typography.bodyLarge)
+                    Text("Require FaceID/Fingerprint on startup", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.outline)
+                }
+                Switch(
+                    checked = isBiometricEnabled,
+                    onCheckedChange = { 
+                        isBiometricEnabled = it
+                        securityPrefs.edit().putBoolean("biometric_enabled", it).apply()
+                    }
+                )
+            }
+            
+            Spacer(modifier = Modifier.height(16.dp))
+            
+            // Clear Data Button
+             OutlinedButton(
+                onClick = {
+                    com.example.ircctracker.data.local.SecurityManager.clearData(context)
+                    apiKey = "" // Clear local state too if needed
+                    // In a real app we might restart or show a toast
+                },
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text("Reset Secure Storage (Logout)", color = MaterialTheme.colorScheme.error)
+            }
+
+            Spacer(modifier = Modifier.height(24.dp))
             Divider()
             Spacer(modifier = Modifier.height(24.dp))
             
@@ -56,7 +106,6 @@ fun SettingsScreen(
             
             // Notification Toggle
             var notificationsEnabled by remember { mutableStateOf(true) } // Load from prefs in real app
-            val context = androidx.compose.ui.platform.LocalContext.current
             val prefs = remember { context.getSharedPreferences("worker_prefs", android.content.Context.MODE_PRIVATE) }
             
             LaunchedEffect(Unit) {

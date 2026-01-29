@@ -71,7 +71,20 @@ A free, privacy-focused Android app to track your Canadian Immigration status. B
 
 ## 📲 Installation
 
-1.  **Download**: [Click here to download MyCanadaTracker-v2-de-ai.apk](release/MyCanadaTracker-v2-de-ai.apk?raw=true)
+1.  **Download**: [Click here to download MyCanadaTracker-v3-security.apk](release/MyCanadaTracker-v3-security.apk?raw=true)
+2.  **Transfer**: If you downloaded this on your computer, send it to your phone.
+
+## 📝 Changelog
+
+### v3.0 - Security Update (Current) 🛡️
+- **Biometric Lock**: Protect your data with FaceID/Fingerprint.
+- **Encryption**: All local data is now encrypted with AES-256.
+- **Privacy**: Zero AI. Zero Analytics. 100% Local.
+- **Fix**: Resolved crash on theme incompatibility.
+
+### v2.0 - De-AI Update
+- Removed Google Gemini dependency.
+- Added Static Dictionary & RSS Feed.
 2.  **Transfer**: If you downloaded this on your computer, send it to your phone.
 3.  **Install**:
     - Open the file on your phone.

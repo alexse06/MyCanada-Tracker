@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.IrccTracker" parent="android:Theme.Material.Light.NoActionBar">
+    <style name="Theme.IrccTracker" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="android:statusBarColor">@color/purple_700</item>
     </style>
